@@ -1,0 +1,344 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	width: 100%;
+	height: 100vh;
+}
+.main{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+}
+.p{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 100%;
+}
+.p>*{
+	position: absolute;
+}
+.p1{
+	top: 0;
+	background-color: #FF9900;
+	transition: opacity .5s;
+}
+.load,.load2{
+	width: 50%;
+	height: 0.3%;
+	background-color: #fff;
+	left: 25%;
+	bottom: 30%;
+}
+.load2{
+	background-color: #F44236;
+	animation: load 1s linear;
+}
+@keyframes load{
+	from{width: 0;}
+	
+}
+.p1>p{
+	width: 100%;
+	text-align: center;
+	font-size: 2.5rem;
+	color: #750901;
+	bottom: 25%;
+}
+.r{
+	width: 40%;
+	height: 25%;
+	background-size: 100% 100%;
+	background-image: url(../img/p2/p2_haizimen.png);
+	left: 30%;
+	bottom: 35%;
+}
+.p2{
+	top: 0;
+	transition: all .5s; 
+	background-size: 100% 100%;
+	background-color: #F44236;
+	opacity: 0;
+	background-image: url(../img/p1/p1_beijing.png);
+}
+@keyframes xz{
+	from{transform: rotate(0);}
+	to{transform: rotate(360deg);}
+}
+.p2z{
+	width: 50%;
+	height:7%;
+	background-color: #FF9900;
+	left: 25%;
+	background-size: 100% 100%;
+	transform-origin: 50% 0;
+	top: 30%;
+	animation: p2z 1s alternate ;
+	animation-iteration-count: 3;
+	background-image: url(../img/p1/p1_wenzi2.png);
+}
+@keyframes p2z{
+	from{
+		transform: rotate(10deg);
+	}
+	to{transform: rotate(-10deg);}
+}
+.wz1{
+	width: 70%;
+	height: 10%;
+	background-size: 100% 100%;
+	left: 15%;
+	top: 15%;
+	animation: opacity 1s 1s linear;
+	background-image: url(../img/p1/p1_wenzi.png);
+}
+
+.arrow{
+	width: 8%;
+	height: 3%;
+	background-size: 100% 100%;
+	bottom: 3%;
+	left: 46%;
+	background-image: url(../img/xiahua.png);
+	animation:arrow 1s infinite linear;
+}
+.p2yy{
+	width: 14%;
+	height: 8%;
+	background-image: url(../img/p1/p1_qqyinyue.png);
+	background-size: 100% 100%;
+	top: 50%;
+	left: 30%;
+	animation: xz 2s infinite linear;
+}
+.p2zl{
+	width: 20%;
+	height: 11%;
+	background-image: url(../img/zhoulun.png);
+	background-size: 100% 100%;
+	top: 49%;
+	left: 45%;
+	animation: xz 2s infinite linear;
+}
+@keyframes arrow{
+	from{
+		opacity: 0;
+		bottom: 0%;
+	}
+	
+}
+/* 第三页 */
+.p3{
+	display: none;
+	transition: all .5s;
+	background-image: url(../img/beijing1.png);
+	background-size: 100% 100%;
+}
+/* 透明动画 */
+@keyframes opacity{
+	from{ opacity: 0;}
+	to{opacity: 1;}
+}
+.erji{
+	width: 19%;
+	height: 8%;
+	background-image: url(../img/p2/p2_erji.png);
+	background-size: 100% 100%;
+	bottom: 2%;
+	left: 40%;
+}
+.p3wenzi{
+	background-image: url(../img/p2/p2_wenzi.png);
+	background-size: 100% 100%;
+	width: 8%;
+	height: 5%;
+	bottom: 3.2%;
+	left: 46%;
+	animation: p3wenzi3 1s infinite linear;
+}
+@keyframes p3wenzi3{
+	0%{
+		transform: scale(1);
+	}
+	100%{
+		transform: scale(0.4);
+	}
+}
+.p3r{
+	width: 50%;
+	height: 30%;
+	background-image: url(../img/p2/p2_haizimen.png);
+	background-size: 100% 100%;
+	left: 25%;
+	top: 14%;
+	animation: p3r 1.5s linear;
+	animation-iteration-count: 2;
+}
+@keyframes p3r{
+	0%{
+		transform: scale(1);
+	}
+	20%{
+		transform: scale(1.2);
+	}
+	50%{
+		transform: scale(1);
+	}
+	70%{
+		transform: scale(0.8);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+.p3yf{
+	width: 15%;
+	height: 5%;
+	background-image: url(../img/yinfu.png);
+	background-size: 100% 100%;
+	top: 29%;
+	right: 20%;
+	animation:  opacity 1s infinite linear;
+}
+.p4{
+	background-image: url(../img/beijing1.png);
+	background-size: 100% 100%;
+	display: none;
+	transition: all .5s;
+}
+.p4lz{
+	width: 18%;
+	height: 10%;
+	background-image: url(../img/zhoulun.png);
+	background-size: 100% 100%;
+	bottom: 8%;
+	left: 41%;
+	animation: xz 1.5s linear infinite;
+}
+@keyframes p4wz1{
+	from{
+		top: 22%;
+		opacity: 0;
+	}
+	to{
+		top: 20%;
+		opacity: 1;
+	}
+}
+@keyframes p4wz2{
+	from{
+		top: 33%;
+		opacity: 0;
+	}
+	to{
+		top: 31%;
+		opacity: 1;
+	}
+}
+@keyframes p4wz3{
+	from{
+		top: 45%;
+		opacity: 0;
+	}
+	to{
+		top: 42%;
+		opacity: 1;
+	}
+}
+.p4wz1,.p4wz2,.p4wz3{
+	width: 55%;
+	height: 7%;
+	background-image: url(../img/p3/p3_wenzi1.png);
+	background-size: 100% 100%;
+	left: 22.5%;
+	top: 20%;
+	opacity: 0;
+
+}
+.p4wz1{
+		animation: p4wz1 1s forwards linear;
+}
+.p4wz2{
+	background-image: url(../img/p3/p3_wenzi2.png);
+	top: 31%; 
+	animation: p4wz2 1s forwards linear 1s;
+}
+.p4wz3{
+	background-image: url(../img/p3/p3_wenzi3.png);
+	top: 42%; 
+	animation: p4wz3 1s forwards linear 2s;
+}
+.p5{
+	display: none;
+	transition: all .5s;
+	background-image: url(../img/beijing2.png);
+	background-size: 100% 100%;
+}
+.p5wz1{
+	width: 25%;
+	height: 5%;
+	background-image: url(../img/anniu.png);
+	background-size: 100% 100%;
+	bottom: 5%;
+	left: 37.5%;
+}
+.p5>p,.p5wz2{
+	color: #F2E3B2;
+	width: 100%;
+	font-size: 2.8rem;
+	text-align: center;
+	top: 5%;
+}
+.p5>p{
+	animation: p2z 1s linear alternate;
+	animation-iteration-count: 4;
+}
+.p5wz2{
+	top: 10%;
+}
+.p5zf{
+	width: 18%;
+	height: 8%;
+	background-image: url(../img/yinfu.png);
+	background-size: 100% 100%;
+	top: 5%;
+	left: 5%;
+	animation: opacity 1.5s infinite linear alternate;
+}
+.p4wz{
+	width: 100%;
+	color: #F2E3B2;
+	font-size: 2.8rem;
+	text-align: center;
+	font-weight: 550;
+	top: 10%;
+	word-spacing: 1rem;
+}
+.p6{
+	display: none;
+	transition: all .5s;
+	background-image: url(../img/beijing3.png);
+	background-size: 100% 100%;
+}
+.p6t1{
+	width: 18%;
+	height: 8%;
+	
+	bottom: 5%;
+	left: 41%;
+	animation: p6t1 1s infinite;
+}
+@keyframes p6t1{
+	0%,50%{
+		transform: rotate(-10deg);
+	}
+	30%,70%{
+		transform: rotate(10deg);
+	}
+	90%{
+		transform: rotate(-10deg) scale(0.6);
+	}
+}
